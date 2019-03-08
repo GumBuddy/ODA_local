@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:sqlserver://localhost;database=ODA_local</property>
+        <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+        <property name="dialect">org.hibernate.dialect.SQLServerDialect</property>
+        <property name="connection.pool_size">30</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+        <mapping resource="DTOs/DTO_Autor.hbm.xml"/>
+        <mapping class="DTOs.DTO_Autor"/>
+        <mapping resource="DTOs/DTO_Licenciatura.hbm.xml"/>
+        <mapping class="DTOs.DTO_Licenciatura"/>
+        <mapping resource="DTOs/DTO_ObjetoAprendizaje.hbm.xml"/>
+        <mapping class="DTOs.DTO_ObjetoAprendizaje"/>
+        <mapping resource="DTOs/DTO_Subcategoria.hbm.xml"/>
+        <mapping class="DTOs.DTO_Subcategoria"/>
+        <mapping resource="DTOs/DTO_Subcompetencia.hbm.xml"/>
+        <mapping class="DTOs.DTO_Subcompetencia"/>
+        <mapping resource="DTOs/DTO_TipoObjeto.hbm.xml"/>
+        <mapping class="DTOs.DTO_TipoObjeto"/>
+        <mapping resource="DTOs/DTO_UnidadAprendizaje.hbm.xml"/>
+        <mapping class="DTOs.DTO_UnidadAprendizaje"/>
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>

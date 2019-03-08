@@ -1,0 +1,94 @@
+JFDML JFormDesigner: "7.0.0.0.158" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "Sistema de Busqueda de Objetos de Aprendizaje "
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/Recursos/logo.png" )
+			"resizable": false
+			"background": new java.awt.Color( 0, 102, 204, 255 )
+			"foreground": sfield java.awt.Color blue
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {comp panel2::l:::x, comp panel3::t:::x, seq l {comp panel1:::p::p, space ::18:x, comp panel4:::p::p, space :::p}}"
+					"$verticalGroup": "par l {seq l {par l {comp panel1:::::x, comp panel4:::::x}, space :::p, comp panel2:::p::p, space u:::p, comp panel3:::::x}}"
+				} ) {
+					name: "contentPanel"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {space :0:245:x}"
+						"$verticalGroup": "par l {space :0:110:x}"
+					} ) {
+						name: "panel1"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par t {seq {space :::p, par l {seq {space :p:168:p, comp label1:::p:111:p}, seq l {space :p:146:p, comp Boton_Buscar:::p:141:p}, comp CampoBusqueda::l:p:423:p}, space ::10:x}}"
+						"$verticalGroup": "par l {seq {space :::p, comp label1:::p::p, space u:::p, comp CampoBusqueda:::p::p, space :::x, comp Boton_Buscar:::p::p, space :::p}}"
+					} ) {
+						name: "panel2"
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "CampoBusqueda"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "Boton_Buscar"
+							"text": "Realiza tu Busqueda"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Boton_BuscarActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label1"
+							"text": "Busqueda General"
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {space :p:72:p, comp Unidad_De_Aprendizaje:::p:120:p, space ::61:x, comp Carreras:::p:120:p, space :p:66:p}, seq l {space :p:168:p, comp label2:::p::p, space :::x}, seq t {space ::166:x, comp Busqueda_Avanzada:::p::p, space :p:156:p}}"
+						"$verticalGroup": "par l {seq {comp label2:::p::p, space :p:10:p, par b {comp Unidad_De_Aprendizaje::b:::x, comp Carreras::b:::x}, space u:::p, comp Busqueda_Avanzada:::p::p, space :p:61:p}}"
+					} ) {
+						name: "panel3"
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "Carreras"
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "Unidad_De_Aprendizaje"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "Busqueda_Avanzada"
+							"text": "Realiza tu Busqueda"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Busqueda_AvanzadaActionPerformed", true ) )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Busqueda_AvanzadaActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label2"
+							"text": "Busqueda Avanzada"
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {space :::p, par l {comp label3::::158:x, comp button1:::::x}, space :::p}}"
+						"$verticalGroup": "par l {seq l {space :p:8:p, comp label3:::p::p, space :::p, comp button1:::p::p, space ::55:x}}"
+					} ) {
+						name: "panel4"
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button1"
+							"text": "Ingresar"
+							"iconTextGap": 5
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ModuloAdministradorActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label3"
+							"text": "Modulo Administrador"
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 25 )
+			"size": new java.awt.Dimension( 465, 425 )
+		} )
+	}
+}

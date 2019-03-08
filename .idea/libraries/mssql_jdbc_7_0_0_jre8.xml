@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="mssql-jdbc-7.0.0.jre8">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.DataGrip2018.3/config/jdbc-drivers/SQL Server/7.0.0/mssql-jdbc-7.0.0.jre8.jar!/" />
+      <root url="jar://$USER_HOME$/.DataGrip2018.3/config/jdbc-drivers/SQL Server/7.0.0/sqlserver7-win-auth.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

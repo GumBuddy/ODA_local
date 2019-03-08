@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="DTOs.DTO_ObjetoAprendizaje" table="objetoAprendizaje" schema="dbo" catalog="ODA_local">
+        <id name="idOa" column="id_OA">
+            <column name="id_OA" sql-type="int"/>
+        </id>
+        <one-to-one name="idOa" class="DTOs.DTO_Autor" constrained="true"></one-to-one>
+        <one-to-one name="idOa" class="DTOs.DTO_Licenciatura" constrained="true"></one-to-one>
+        <one-to-one name="idOa" class="DTOs.DTO_Subcategoria" constrained="true"></one-to-one>
+        <one-to-one name="idOa" class="DTOs.DTO_TipoObjeto" constrained="true"></one-to-one>
+        <one-to-one name="idOa" class="DTOs.DTO_Subcompetencia" constrained="true"></one-to-one>
+        <one-to-one name="idOa" class="DTOs.DTO_UnidadAprendizaje" constrained="true"></one-to-one>
+
+        <property name="nomOa">
+            <column name="nom_OA" sql-type="varchar(100)" length="100"/>
+        </property>
+        <property name="duracionOa">
+            <column name="duracion_OA" sql-type="time"/>
+        </property>
+        <property name="objetivoOa">
+            <column name="objetivo_OA" sql-type="varchar(500)" length="500"/>
+        </property>
+        <property name="descripcionOa">
+            <column name="descripcion_OA" sql-type="varchar(500)" length="500"/>
+        </property>
+        <property name="enlace">
+            <column name="enlace" sql-type="varchar(300)" length="300"/>
+        </property>
+    </class>
+</hibernate-mapping>

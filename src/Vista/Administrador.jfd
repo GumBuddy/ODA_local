@@ -1,0 +1,66 @@
+JFDML JFormDesigner: "7.0.0.0.158" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::37:x, comp panel1:::p::p, space :p:36:p}}"
+			"$verticalGroup": "par l {seq t {space ::20:x, comp panel1:::p::p, space :p:15:p}}"
+		} ) {
+			name: "Admistrador"
+			"title": "Administrador"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/Recursos/logo.png" )
+			"resizable": false
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, par l {comp button7:::::x, comp button4::t:::x, comp button2::t:::x, comp button1::l:::x, comp button3::l:::x, comp button5::l:::x, comp button6::l::168:x, comp label1::l:::x}, space :::p}}"
+				"$verticalGroup": "par l {seq l {comp label1:::p::p, space :::p, comp button1:::p::p, space :::p, comp button2:::p::p, space :::p, comp button3:::p::p, space :::p, comp button4:::p::p, space :::p, comp button5:::p::p, space :::p, comp button6:::p::p, space :::p, comp button7:::p::p}}"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "Autor"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": "Licenciatura"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button3"
+					"text": "Subcategoria"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button4"
+					"text": "Subcompetencia"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button4ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button5"
+					"text": "Tipo de Objeto"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button5ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button6"
+					"text": "Unidad de Aprendizaje"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button6ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button7"
+					"text": "Objeto de Aprendizaje"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button7ActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button7ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Insertar Modulo Nuevo"
+					"horizontalAlignment": 0
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 255, 300 )
+		} )
+	}
+}

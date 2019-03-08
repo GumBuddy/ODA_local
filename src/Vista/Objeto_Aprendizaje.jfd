@@ -1,0 +1,76 @@
+JFDML JFormDesigner: "7.0.0.0.158" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::x, par l {seq t {comp panel1:::p::p, space :::p, comp panel2:::p::p, space :::p}, seq t {comp button1:::p::p, space :p:213:p}}}}"
+			"$verticalGroup": "par l {seq l {space :p:15:p, par l {comp panel1:::::x, seq {comp panel2:::p::p, space :0:0:x}}, space :p:5:p, comp button1:::p::p, space :::p}}"
+		} ) {
+			name: "this"
+			"title": "Autor"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/Recursos/administrador.png" )
+			"resizable": false
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, par l {comp label5::t:::x, seq l {comp label1:::p:110:p, space :0:0:x}, comp label4::t:::x, comp label3::t:::x, comp label2::t:::x}, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, comp label1:::p::p, space s:::p, comp label2:::p::p, space s:::p, comp label4:::p::p, space s:::p, comp label3:::p::p, space :p:18:p, comp label5:::p::p, space :::x}}"
+			} ) {
+				name: "panel1"
+				"componentOrientation": sfield java.awt.ComponentOrientation RIGHT_TO_LEFT
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Titulo  :"
+					"horizontalAlignment": 4
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Duracion  :"
+					"horizontalAlignment": 4
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Descripcion  :"
+					"horizontalAlignment": 4
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Objetivo  :"
+					"horizontalAlignment": 4
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Enlace  :"
+					"horizontalAlignment": 4
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, par l {comp textField1::t::341:x, comp textField4:::::x, comp textField3::l:::x, comp textField2::t:::x, comp textField5::l:::x}, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, comp textField1:::p::p, space :p:8:p, comp textField2:::p::p, space u:::p, comp textField4:::p::p, space u:::p, comp textField3:::p::p, space u:::p, comp textField5:::p::p, space ::17:x}}"
+			} ) {
+				name: "panel2"
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField1"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField2"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField3"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField4"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField5"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Ingresar Datos"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 10, 0 )
+			"size": new java.awt.Dimension( 495, 265 )
+		} )
+	}
+}

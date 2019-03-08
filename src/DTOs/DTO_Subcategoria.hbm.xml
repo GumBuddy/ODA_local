@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="DTOs.DTO_Subcategoria" table="subcategoria" schema="dbo" catalog="ODA_local">
+        <id name="idSubcat">
+            <column name="id_subcat" sql-type="int"/>
+        </id>
+        <property name="nomSubcat">
+            <column name="nom_subcat" sql-type="varchar(100)" length="100"/>
+        </property>
+    </class>
+</hibernate-mapping>

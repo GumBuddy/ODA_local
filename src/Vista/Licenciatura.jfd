@@ -1,0 +1,37 @@
+JFDML JFormDesigner: "7.0.0.0.158" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp panel2:::::x, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :p:19:p, comp panel2:::p::p, space :::x}}"
+		} ) {
+			name: "this"
+			"title": "Autor"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/Recursos/administrador.png" )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {comp textField1::l:::x, comp label1::l::321:x, seq t {space ::135:x, comp button1:::p::p, space :p:131:p}}"
+				"$verticalGroup": "par l {seq l {comp label1:::p::p, space :::p, comp textField1:::p::p, space :::p, comp button1:::p::p, space ::7:x}}"
+			} ) {
+				name: "panel2"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Nueva Licenciatura"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField1"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "Ingresar"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 335, 135 )
+		} )
+	}
+}
